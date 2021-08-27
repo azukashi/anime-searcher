@@ -3,6 +3,7 @@ node_modules
 
 # Ignore Generated Lockfile
 package-lock.json
+yarn.lock
 
 # Ignore .vscode config
 .vscode
