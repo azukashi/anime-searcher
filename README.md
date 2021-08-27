@@ -1,8 +1,36 @@
 # Anime Searcher Discord Bot
 
-Discord Bot to Search an Anime from Image Source. Easily find anime from given Image URL.
+🔎 Discord Bot to Search an Anime from Image Source. Easily find anime from given Image URL.
 
 ![Image Preview](https://cdn.upload.systems/uploads/KPgpaIbw.png)
+
+# Commands
+
+Here is Command List of Anime Searcher!
+
+### Normal Commands
+
+| **Name** | **Description**                                               |
+|----------|---------------------------------------------------------------|
+| `help`   | Show Help Menu                                                |
+| `ping`   | Show Client Ping Latency                                      |
+| `search` | Search Anime from a Image. Requires Image URL or Upload Image |
+
+### Slash Commands
+
+| **Name**  | **Description**                                               |
+|-----------|---------------------------------------------------------------|
+| `/help`   | Show Help Menu                                                |
+| `/ping`   | Show Client Ping Latency                                      |
+| `/search` | Search Anime from a Image. Requires Image URL or Upload Image |
+
+# Feature
+
+- Help Desk Menu.
+- Ping Commands.
+- Search Anime Directly from Image URL or Upload Image with `{prefix}search` caption.
+- Slash Command Support.
+- Add & Set Channel using MongoDB (WIP).
 
 # Setup
 
@@ -66,7 +94,7 @@ Now, you're fully done. You can customize every single commands, or something. A
 Test your bot by typing this at Discord.
 
 ```yml
-{bot_prefix}search https://github.com/soruly/trace.moe/raw/master/demo.jpg
+{prefix}search https://github.com/soruly/trace.moe/raw/master/demo.jpg
 ```
 
 URL Example is looks like this
@@ -92,3 +120,7 @@ We're open to any contribution! Feel free to Contributing and Submitting a Pull 
 - Commit your changes: `git commit -am 'Add some feature'`
 - Push to the branch: `git push origin my-new-feature`
 - Submit a pull request :D
+
+# License
+
+This Project is Under [MIT License](blob/master/LICENSE) &copy; Gifaldy Azka

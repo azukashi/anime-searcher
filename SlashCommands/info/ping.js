@@ -2,8 +2,8 @@ const { Client, CommandInteraction } = require("discord.js");
 
 module.exports = {
     name: "ping",
-    description: "returns websocket ping",
-    type: 'CHAT_INPUT',
+    description: "Show client Ping Latency",
+    options: [],
     /**
      *
      * @param {Client} client
