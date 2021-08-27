@@ -14,10 +14,13 @@ module.exports = {
    * @param {String[]} args
    */
   run: async (client, message, args) => {
-    const image_url = args.join(" ");
+    const image_url =
+      args.join(" ") || message.attachments.size > 0
+        ? message.attachments.array()[0].url
+        : null;
     if (!image_url)
       return message.reply(
-        `Please send a Image URL!\nExample : \`${client.config.prefix}search https://gifaldyazka.is-a.dev/image/demo.png\``
+        `Please send a Image or Image URL!\nExample : \`${client.config.prefix}search https://gifaldyazka.is-a.dev/image/demo.png\``
       );
     fetch(
       `https://api.trace.moe/search?cutBorders&url=${encodeURIComponent(
