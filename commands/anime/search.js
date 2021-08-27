@@ -6,29 +6,23 @@ const Anilist = new anilist();
 module.exports = {
   name: "search",
   description: "Search Anime from a Image",
-  aliases: ["anime-src"],
-  emoji: "",
   /**
    * @param {Client} client
    * @param {Message} message
    * @param {String[]} args
    */
   run: async (client, message, args) => {
-    const image_url =
-      args.join(" ") || message.attachments.size > 0
-        ? message.attachments.array()[0].url
-        : null;
-    if (!image_url)
-      return message.reply(
-        `Please send a Image or Image URL!\nExample : \`${client.config.prefix}search https://gifaldyazka.is-a.dev/image/demo.png\``
-      );
-    fetch(
-      `https://api.trace.moe/search?cutBorders&url=${encodeURIComponent(
-        image_url
-      )}`
-    )
+    // Get Image from User. Uploaded image or Image URL.
+    const image = message.attachments.size > 0 ? message.attachments.map((attachments) => attachments.url) : args.join(" ");
+    
+    // If there is no image, Reply and tell the user.
+    if (!image) return message.reply({content: `Please send a Image or Image URL!\nExample : \`${client.config.prefix}search https://gifaldyazka.is-a.dev/image/demo.png\`\nOr upload an image with \`${client.config.prefix}search\` caption.`});
+
+    // Fetch data using node-fetch.
+    fetch(`https://api.trace.moe/search?cutBorders&url=${encodeURIComponent(image)}`)
       .then((res) => res.json())
       .then((body) => {
+        // Try-catch block
         try {
           Anilist.media.anime(body.result[0].anilist).then((data) => {
             const embed = new MessageEmbed()
@@ -46,6 +40,7 @@ module.exports = {
             message.channel.send({ embeds: [embed] });
           });
         } catch (err) {
+          // If there is any errors, It will not crashing your process. It'll catch and tell the error.
           const embed = new MessageEmbed()
             .setTitle(":x: That Anime is Not Found!")
             .setDescription(
@@ -54,6 +49,7 @@ module.exports = {
             .setColor("#FF0000")
             .setTimestamp();
           message.channel.send({ embeds: [embed] });
+          console.log(err);
         }
       });
   },
