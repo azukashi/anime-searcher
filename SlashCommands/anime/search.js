@@ -22,11 +22,7 @@ module.exports = {
   run: async (client, interaction, args) => {
     const [image_url] = args;
 
-    fetch(
-      `https://api.trace.moe/search?cutBorders&url=${encodeURIComponent(
-        image_url
-      )}`
-    )
+    fetch(`https://api.trace.moe/search?cutBorders&url=${encodeURIComponent(image_url)}`)
       .then((res) => res.json())
       .then((body) => {
         Anilist.media.anime(body.result[0].anilist).then((data) => {
