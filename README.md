@@ -11,18 +11,18 @@ Here is Command List of Anime Searcher!
 ### Normal Commands
 
 | **Name** | **Description**                                               |
-|----------|---------------------------------------------------------------|
+| -------- | ------------------------------------------------------------- |
 | `help`   | Show Help Menu                                                |
 | `ping`   | Show Client Ping Latency                                      |
 | `search` | Search Anime from a Image. Requires Image URL or Upload Image |
 
 ### Slash Commands
 
-| **Name**  | **Description**                                               |
-|-----------|---------------------------------------------------------------|
-| `/help`   | Show Help Menu                                                |
-| `/ping`   | Show Client Ping Latency                                      |
-| `/search` | Search Anime from a Image. Requires Image URL or Upload Image |
+| **Name**  | **Description**                               |
+| --------- | --------------------------------------------- |
+| `/help`   | Show Help Menu                                |
+| `/ping`   | Show Client Ping Latency                      |
+| `/search` | Search Anime from a Image. Requires Image URL |
 
 # Feature
 
