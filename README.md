@@ -1,6 +1,6 @@
 # Anime Searcher Discord Bot
 
-Discord Bot to Search an Anime from Image Source. Easily find anime from given Image URL.
+🔎 Discord Bot to Search an Anime from Image Source. Easily find anime from given Image URL.
 
 ![Image Preview](https://cdn.upload.systems/uploads/KPgpaIbw.png)
 
