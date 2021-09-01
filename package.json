@@ -14,7 +14,7 @@
     "anilist-node": "^1.9.1",
     "discord.js": "^13.1.0",
     "glob": "^7.1.7",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^3.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
