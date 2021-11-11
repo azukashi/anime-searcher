@@ -1,5 +1,5 @@
-const { Client, Collection, Intents } = require("discord.js");
-const dotenv = require("dotenv");
+const { Client, Collection, Intents } = require('discord.js');
+const dotenv = require('dotenv');
 dotenv.config();
 
 const client = new Client({
@@ -16,6 +16,6 @@ client.commands = new Collection();
 client.slashCommands = new Collection();
 
 // Initializing the project
-require("./handler")(client);
+require('./handler')(client);
 
 client.login(process.env.TOKEN);
