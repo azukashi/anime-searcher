@@ -4,7 +4,7 @@
 
 ![Image Preview](https://cdn.upload.systems/uploads/KPgpaIbw.png)
 
-# Commands
+## Commands
 
 Here is Command List of Anime Searcher!
 
@@ -24,17 +24,15 @@ Here is Command List of Anime Searcher!
 | `/ping`   | Show Client Ping Latency                      |
 | `/search` | Search Anime from a Image. Requires Image URL |
 
-# Feature
+## Feature
 
 - Help Desk Menu.
 - Ping Commands.
-- Search Anime Directly from Image URL or Upload Image with `{prefix}search` caption.
+- Search Anime Directly from Image URL or Upload Image with `[prefix]search` caption.
 - Slash Command Support.
 - Add & Set Channel using MongoDB (WIP).
 
-# Setup
-
-To run this bot locally, You need to prepare and Configuring some files. Follow this instructions!
+## Setup
 
 ### Clone this Repository
 
@@ -43,78 +41,41 @@ $ git clone https://github.com/gifaldyazkaa/anime-searcher.git
 $ cd anime-searcher
 ```
 
-### Configure and Change Config File
+### Copy and create Environment Variables
 
-You're now have this repository on your local computer. The next step is configuring and change `config.json` file.
+```sh
+$ cp .env.example .env
+```
 
-Change `config.json` value to
+### Fill all required fields at .env
 
-```json
-{
-  "token": "your discord bot token goes here.",
-  "prefix": "your discord bot prefix goes here."
-}
+```
+TOKEN=your_discord_bot_token
+PREFIX=your_discord_bot_prefix
 ```
 
 ### Install Required Packages
 
-- You can run and install manually by running
-  ```bash
-  $ npm install
-  or
-  $ yarn install
-  ```
-- Or running `setup.sh`
-  ```bash
-  $ ./setup.sh
-  ```
-
-### Finally run your bot
-
 ```sh
-$ npm run start # Run in Normal Mode
-or
-$ npm run dev # Run in Development Mode with Nodemon
+# npm
+$ npm install
+# yarn
+$ yarn install
 ```
 
-If you're using yarn, You can do
+### Run your bot
 
 ```sh
-$ yarn run start # Run in Normal Mode
-or
-$ yarn run dev # Run in Development Mode with Nodemon
+# Normal
+$ yarn start
+
+# Development
+$ yarn run dev
 ```
-
-Here is Differences Between `yarn run start` & `yarn run dev`.
-
-![Diff Start Script](https://cdn.upload.systems/uploads/aBRUrVMn.png)
 
 ### You're done.
 
-Now, you're fully done. You can customize every single commands, or something. And let me know if you had an problem by Creating New Issue at This Repository. Thanks!
-
-### Test your bot
-
-Test your bot by typing this at Discord.
-
-```yml
-{prefix}search https://github.com/soruly/trace.moe/raw/master/demo.jpg
-```
-
-URL Example is looks like this
-
-![Image Test Preview](https://github.com/soruly/trace.moe/raw/master/demo.jpg)
-
-# Slash Command Support
-
-This Repo and Code Supporting Slash Commands. And now it's uses Discord.js v13.1.0! To make this appears in your Server, You need to check `application_commands`, and `bot` scopes in OAuth2 Tab at Discord Developer Portal. And invite your bot. Just run your bot, and Now you can enjoy Slash Command Feature for this bot.
-
-![Scopes Image](https://cdn.upload.systems/uploads/oih6Uodv.png)
-
-Slash Commands Menu Preview
-![Slash Command List](https://cdn.upload.systems/uploads/PGWPkadG.png)
-
-# Contributing
+## Contributing
 
 We're open to any contribution! Feel free to Contributing and Submitting a Pull Request!
 
@@ -125,6 +86,6 @@ We're open to any contribution! Feel free to Contributing and Submitting a Pull 
 - Push to the branch: `git push origin my-new-feature`
 - Submit a pull request :D
 
-# License
+## License
 
-This Project is Under [MIT License](blob/master/LICENSE) &copy; Gifaldy Azka
+This Project is Under [MIT License](blob/master/LICENSE)
