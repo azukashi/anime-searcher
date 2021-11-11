@@ -1,8 +1,8 @@
-const { Message, Client, MessageEmbed } = require("discord.js");
+const { Message, Client, MessageEmbed } = require('discord.js');
 
 module.exports = {
-  name: "ping",
-  description: "Show client ping latency",
+  name: 'ping',
+  description: 'Show client ping latency',
   /**
    *
    * @param {Client} client
@@ -11,7 +11,7 @@ module.exports = {
    */
   run: async (client, message, args) => {
     const embed = new MessageEmbed()
-      .setTitle("Pong!")
+      .setTitle('Pong!')
       .setDescription(`Client Ping Latency : ${client.ws.ping}`)
       .setTimestamp();
     message.channel.send({ embeds: [embed] });

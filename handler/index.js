@@ -1,6 +1,6 @@
-const { glob } = require("glob");
-const { promisify } = require("util");
-const { Client } = require("discord.js");
+const { glob } = require('glob');
+const { promisify } = require('util');
+const { Client } = require('discord.js');
 
 const globPromise = promisify(glob);
 
@@ -12,7 +12,7 @@ module.exports = async (client) => {
   const commandFiles = await globPromise(`${process.cwd()}/commands/**/*.js`);
   commandFiles.map((value) => {
     const file = require(value);
-    const splitted = value.split("/");
+    const splitted = value.split('/');
     const directory = splitted[splitted.length - 2];
 
     if (file.name) {
@@ -36,13 +36,13 @@ module.exports = async (client) => {
     if (!file?.name) return;
     client.slashCommands.set(file.name, file);
 
-    if (["MESSAGE", "USER"].includes(file.type)) delete file.description;
+    if (['MESSAGE', 'USER'].includes(file.type)) delete file.description;
     arrayOfSlashCommands.push(file);
   });
-  client.on("ready", async () => {
+  client.on('ready', async () => {
     // Register for a single guild
     await client.guilds.cache
-      .get("your guild id here")
+      .get('your guild id here')
       .commands.set(arrayOfSlashCommands);
 
     // Register for all the guilds the bot is in

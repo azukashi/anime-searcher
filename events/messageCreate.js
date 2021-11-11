@@ -1,7 +1,7 @@
-require("dotenv").config();
-const client = require("../index");
+require('dotenv').config();
+const client = require('../index');
 
-client.on("messageCreate", async (message) => {
+client.on('messageCreate', async (message) => {
   if (
     message.author.bot ||
     !message.guild ||
@@ -12,7 +12,7 @@ client.on("messageCreate", async (message) => {
   const [cmd, ...args] = message.content
     .slice(process.env.PREFIX.length)
     .trim()
-    .split(" ");
+    .split(' ');
 
   const command =
     client.commands.get(cmd.toLowerCase()) ||
