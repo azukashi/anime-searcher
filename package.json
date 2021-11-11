@@ -11,7 +11,7 @@
   },
   "keywords": [],
   "author": "Gifaldy Azka",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "dependencies": {
     "anilist-node": "^1.9.1",
     "discord.js": "13.3.1",
