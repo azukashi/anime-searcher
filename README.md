@@ -89,4 +89,4 @@ We're open to any contribution! Feel free to Contributing and Submitting a Pull 
 
 ## License
 
-This Project is Under [MIT License](blob/master/LICENSE)
+This Project is Under [Apache-2.0](blob/master/LICENSE)
