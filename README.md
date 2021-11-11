@@ -1,8 +1,12 @@
+<div align="center">
+
 # Anime Searcher Discord Bot
 
 🔎 Discord Bot to Search an Anime from Image Source. Easily find anime from given Image URL.
 
-![Image Preview](https://cdn.upload.systems/uploads/KPgpaIbw.png)
+![Image Preview](https://cdn.upload.systems/uploads/mFE1tdbL.png)
+
+</div>
 
 ## Commands
 
@@ -75,6 +79,22 @@ $ yarn run dev
 ```
 
 ### You're done.
+
+## Try it yourself
+
+Try it yourself by searching an anime with this example image!
+
+```
+[prefix]search https://cdn.upload.systems/uploads/DD4hTrqv.png
+```
+
+> Change `[prefix]` with your discord bot prefix!
+
+The example image is looks like this
+
+![Example Image](https://cdn.upload.systems/uploads/DD4hTrqv.png)
+
+You can visiting the Image URL to Getting RAW Image and Download it. Then, you can try to upload the image with `[prefix]search` caption.
 
 ## Contributing
 
