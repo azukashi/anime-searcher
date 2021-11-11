@@ -59,6 +59,7 @@ PREFIX=your_discord_bot_prefix
 ```sh
 # npm
 $ npm install
+
 # yarn
 $ yarn install
 ```
