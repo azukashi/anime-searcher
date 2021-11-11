@@ -13,6 +13,7 @@
   "dependencies": {
     "anilist-node": "^1.9.1",
     "discord.js": "13.3.1",
+    "djs-template-cli": "^1.1.0",
     "dotenv": "^10.0.0",
     "glob": "^7.1.7",
     "node-fetch": "^2.5.0"
