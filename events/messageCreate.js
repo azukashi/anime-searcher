@@ -1,15 +1,16 @@
+require("dotenv").config();
 const client = require("../index");
 
 client.on("messageCreate", async (message) => {
   if (
     message.author.bot ||
     !message.guild ||
-    !message.content.toLowerCase().startsWith(client.config.prefix)
+    !message.content.toLowerCase().startsWith(process.env.PREFIX)
   )
     return;
 
   const [cmd, ...args] = message.content
-    .slice(client.config.prefix.length)
+    .slice(process.env.PREFIX.length)
     .trim()
     .split(" ");
 
