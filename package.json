@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "format": "prettier -w .",
+    "check-format": "prettier -c ."
   },
   "keywords": [],
   "author": "Gifaldy Azka",
@@ -19,6 +21,7 @@
     "node-fetch": "^2.5.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "prettier": "^2.4.1"
   }
 }
