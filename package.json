@@ -18,7 +18,7 @@
     "djs-template-cli": "^1.1.0",
     "dotenv": "^10.0.0",
     "glob": "^7.1.7",
-    "node-fetch": "^2.5.0"
+    "node-fetch": "^2.6.6"
   },
   "devDependencies": {
     "nodemon": "^2.0.12",
