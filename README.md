@@ -4,7 +4,7 @@
 
 🔎 Discord Bot to Search an Anime from Image Source. Easily find anime from given Image URL.
 
-[![Image Preview](https://cdn.upload.systems/uploads/Ayt8M5QW.png)](https://i.upload.systems/Ayt8M5QW)
+[![Image Preview](https://cdn.upload.systems/uploads/7J1cBoB3.png)](https://i.upload.systems/7J1cBoB3)
 
 </div>
 
