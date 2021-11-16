@@ -14,25 +14,25 @@ Here is Command List of Anime Searcher!
 
 ### Normal Commands
 
-| **Name** | **Description**                                               |
-| -------- | ------------------------------------------------------------- |
-| `help`   | Show Help Menu                                                |
-| `ping`   | Show Client Ping Latency                                      |
-| `search` | Search Anime from a Image. Requires Image URL or Upload Image |
+| **Name**          | **Description**                                               |
+| ----------------- | ------------------------------------------------------------- |
+| <kbd>!help</kbd>  | Show Help Menu                                                |
+| <kbd>ping</kbd>   | Show Client Ping Latency                                      |
+| <kbd>search</kbd> | Search Anime from a Image. Requires Image URL or Upload Image |
 
 ### Slash Commands
 
-| **Name**  | **Description**                               |
-| --------- | --------------------------------------------- |
-| `/help`   | Show Help Menu                                |
-| `/ping`   | Show Client Ping Latency                      |
-| `/search` | Search Anime from a Image. Requires Image URL |
+| **Name**           | **Description**                               |
+| ------------------ | --------------------------------------------- |
+| <kbd>/help</kbd>   | Show Help Menu                                |
+| <kbd>/ping</kbd>   | Show Client Ping Latency                      |
+| <kbd>/search</kbd> | Search Anime from a Image. Requires Image URL |
 
 ## Feature
 
 - Help Desk Menu.
 - Ping Commands.
-- Search Anime Directly from Image URL or Upload Image with `[prefix]search` caption.
+- Search Anime Directly from Image URL or Upload Image with <kbd>!search</kbd> caption.
 - Slash Command Support.
 - Add & Set Channel using MongoDB (WIP).
 
@@ -55,8 +55,10 @@ $ cp .env.example .env
 
 ```
 TOKEN=your_discord_bot_token
-PREFIX=your_discord_bot_prefix
+PREFIX=!
 ```
+
+> By default, Prefix set to <kbd>!</kbd>. However, you can change it!
 
 ### Install Required Packages
 
@@ -85,16 +87,14 @@ $ yarn run dev
 Try it yourself by searching an anime with this example image!
 
 ```
-[prefix]search https://cdn.upload.systems/uploads/UY0zzn4Z.jpg
+!search https://cdn.upload.systems/uploads/UY0zzn4Z.jpg
 ```
-
-> Change `[prefix]` with your discord bot prefix!
 
 The example image is looks like this
 
 [![Example Image](https://cdn.upload.systems/uploads/UY0zzn4Z.jpg)](https://i.upload.systems/UY0zzn4Z)
 
-You can visit [i.upload.systems/UY0zzn4Z](https://i.upload.systems/UY0zzn4Z) to Getting RAW Image and Download it. Then, you can try to upload the image with `[prefix]search` caption.
+You can visit [i.upload.systems/UY0zzn4Z](https://i.upload.systems/UY0zzn4Z) to Getting RAW Image and Download it. Then, you can try to upload the image with <kbd>!search</kbd> caption.
 
 ## Reporting Problems
 
