@@ -2,17 +2,15 @@ require('dotenv').config();
 const client = require('../index');
 
 client.on('messageCreate', async (message) => {
+  const prefix = process.env.PREFIX || '!';
   if (
     message.author.bot ||
     !message.guild ||
-    !message.content.toLowerCase().startsWith(process.env.PREFIX)
+    !message.content.toLowerCase().startsWith(prefix)
   )
     return;
 
-  const [cmd, ...args] = message.content
-    .slice(process.env.PREFIX.length)
-    .trim()
-    .split(' ');
+  const [cmd, ...args] = message.content.slice(prefix.length).trim().split(' ');
 
   const command =
     client.commands.get(cmd.toLowerCase()) ||
