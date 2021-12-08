@@ -2,7 +2,7 @@
 
 # 🔎 Anime Searcher Discord Bot
 
-Discord Bot to Search an Anime from Image Source. Easily find anime from given Image URL.
+Discord Bot to Search an Anime from Image Source. Easily find anime from given Image URL or Uploaded attachments.
 
 [![Image Preview](https://cdn.upload.systems/uploads/7J1cBoB3.png)](https://i.upload.systems/7J1cBoB3)
 
@@ -70,7 +70,7 @@ OWNERID="your discord user id"
 TESTSERVER="your discord server id"
 ```
 
-> By default, Prefix set to <kbd>!</kbd>. However, you can change it!
+> By default, Prefix set to <kbd>></kbd>. However, you can change it!
 
 ### 📦 Install Required Packages
 
