@@ -1,0 +1,85 @@
+{
+  "name": "anime-searcher",
+  "version": "2.0.0",
+  "description": "Discord Bot to Search an Anime from Image Source. Easily find anime from given Image URL.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "ts-node --transpile-only ./src/index.ts",
+    "dev": "ts-node-dev --respawn --cls --rs --transpile-only --poll ./src/index.ts",
+    "build": "tsc",
+    "format": "prettier -w .",
+    "check-format": "prettier -c ."
+  },
+  "keywords": [
+    "bot",
+    "discord",
+    "discord-js",
+    "anime",
+    "search",
+    "anime-search"
+  ],
+  "author": "Gifaldy Azka",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "anilist-node": "^1.11.0",
+    "chalk": "^4.1.2",
+    "consola": "^2.15.3",
+    "discord.js": "^13.1.0",
+    "djs-template-cli": "^1.1.0",
+    "dotenv": "^10.0.0",
+    "glob": "^7.1.7",
+    "mongoose": "^5.13.7",
+    "node-fetch": "2.6.6"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-angular": "^13.1.0",
+    "@types/node": "^16.6.0",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2",
+    "ts-node": "^10.2.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.3.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn dlx @yarnpkg/doctor && lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.ts": "prettier --write",
+    "*.js": "prettier --write"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-angular"
+    ],
+    "rules": {
+      "scope-case": [
+        2,
+        "always",
+        "pascal-case"
+      ],
+      "type-enum": [
+        2,
+        "always",
+        [
+          "chore",
+          "build",
+          "ci",
+          "docs",
+          "feat",
+          "fix",
+          "perf",
+          "refactor",
+          "revert",
+          "style",
+          "test"
+        ]
+      ]
+    }
+  }
+}

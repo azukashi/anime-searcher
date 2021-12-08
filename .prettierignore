@@ -1,0 +1,9 @@
+# Modules
+node_modules/
+
+# Build output
+dist/
+
+# Some files to ignore
+src/Commands/Anime/Search.ts
+src/Slash/Anime/Search.ts
