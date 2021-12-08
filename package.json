@@ -23,7 +23,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "anilist-node": "^1.11.0",
-    "chalk": "^4.1.2",
+    "chalk": "^5.0.0",
     "consola": "^2.15.3",
     "discord.js": "^13.1.0",
     "djs-template-cli": "^1.1.0",
