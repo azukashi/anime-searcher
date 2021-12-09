@@ -32,7 +32,7 @@ Here is Command List of Anime Searcher!
 
 - Help Desk Menu.
 - Ping Commands.
-- Search Anime Directly from Image URL or Upload Image with <kbd>!search</kbd> caption.
+- Search Anime Directly from Image URL or Upload Image with <kbd>>search</kbd> caption.
 - Slash Command Support.
 - Add & Set Channel using MongoDB (WIP).
 
@@ -75,10 +75,10 @@ TESTSERVER="your discord server id"
 ### 📦 Install Required Packages
 
 ```sh
-# using yarn
+# Using yarn
 $ yarn install
 
-# using npm
+# Using npm
 $ npm install
 ```
 
@@ -106,7 +106,7 @@ The example image is looks like this
 
 [![Example Image](https://cdn.upload.systems/uploads/UY0zzn4Z.jpg)](https://i.upload.systems/UY0zzn4Z)
 
-You can visit [i.upload.systems/UY0zzn4Z](https://i.upload.systems/UY0zzn4Z) to Getting RAW Image and Download it. Then, you can try to upload the image with <kbd>!search</kbd> caption.
+You can visit [i.upload.systems/UY0zzn4Z](https://i.upload.systems/UY0zzn4Z) to Getting RAW Image and Download it. Then, you can try to upload the image with <kbd>>search</kbd> caption.
 
 ## 👨‍💻 Contributing
 
