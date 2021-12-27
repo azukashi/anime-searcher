@@ -863,10 +863,10 @@ discord.js@^13.1.0:
     node-fetch "^2.6.1"
     ws "^7.5.1"
 
-djs-template-cli@^1.1.0, djs-template-cli@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/djs-template-cli/-/djs-template-cli-1.2.0.tgz#48b4e97343aa6ca51dd135d03fd5daf2e5e2c5e9"
-  integrity sha512-UTN4F7CCgt0/9n/YXjtiSqmBqBPh7RyE0ilayJvbIRS2WIPKhKv9H8zPGwe2uTchspb35Cq528PaGfuVOO12DA==
+djs-template-cli@^1.1.0, djs-template-cli@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/djs-template-cli/-/djs-template-cli-1.2.1.tgz#e0e8993a64c085c91011f678a156e880fe2453a0"
+  integrity sha512-3yD5hFZLNh0OTmpPPYy5BbkQYzhyQvBGlN5CBwHsDQ6JisLxzA1Af5+mul3G/aZBF0Jz4NOcYfgsInZ1KpH5IQ==
   dependencies:
     arg "^5.0.0"
     chalk "^4.1.1"
