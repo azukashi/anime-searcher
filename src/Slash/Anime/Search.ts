@@ -28,7 +28,7 @@ export const slash: Slash = {
           try {
             AniList.media.anime(body.result[0].anilist).then((data) => {
               const embed = new MessageEmbed()
-                .setAuthor(`Okay, Got it!`, client.user.displayAvatarURL({ dynamic: true }))
+                .setAuthor({ name: `Okay, Got it!`, iconURL: client.user.displayAvatarURL() })
                 .addField(`Title`, `${data.title.romaji}`)
                 .addField(`Similarity`, `${body.result[0].similarity}`)
                 .addField(`Episode(s)`, `${data.episodes}`, true)
@@ -36,7 +36,7 @@ export const slash: Slash = {
                 .addField(`Status`, `${data.status}`, true)
                 .setThumbnail(data.coverImage.large)
                 .setImage(body.result[0].image)
-                .setFooter(`Search Request by ${interaction.user.username}`)
+                .setFooter({ text: `Search Request by ${interaction.user.username}` })
                 .setTimestamp()
                 .setColor("GOLD");
               interaction.followUp({ embeds: [embed] });
