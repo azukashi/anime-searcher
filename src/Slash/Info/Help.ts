@@ -1,4 +1,4 @@
-import { Message, MessageEmbed } from 'discord.js';
+import { MessageEmbed, ColorResolvable } from 'discord.js';
 import { Slash } from '../../Interfaces';
 
 export const slash: Slash = {
@@ -7,6 +7,8 @@ export const slash: Slash = {
   testOnly: false,
   options: [],
   run: async (client, interaction, args) => {
+    // Specify embed color
+    const rc: ColorResolvable = interaction.guild.me.displayHexColor;
     const embed = new MessageEmbed()
       .setTitle(':book: Help Menu')
       .setThumbnail(client.user.displayAvatarURL({ size: 512 }))
@@ -18,7 +20,7 @@ export const slash: Slash = {
         'Slash Commands',
         `\`/help\` - Show this Help Desk\n\`/ping\` - Show client ping latency\n\`/search\` - Search anime from Image Source. Requires Image URL.`
       )
-      .setColor('GOLD')
+      .setColor(rc)
       .setTimestamp();
     interaction.followUp({ embeds: [embed] });
   },

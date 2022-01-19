@@ -1,4 +1,4 @@
-import { MessageEmbed } from 'discord.js';
+import { MessageEmbed, ColorResolvable } from 'discord.js';
 import { Slash } from '../../Interfaces';
 import anilist from 'anilist-node';
 import fetch from 'node-fetch';
@@ -17,6 +17,8 @@ export const slash: Slash = {
         }
     ],
     run: async(client, interaction, args) => {
+        // Specify embed color
+        const rc: ColorResolvable = interaction.guild.me.displayHexColor;
         // Get image from args
         const [image_url]: any = args;
 
@@ -38,7 +40,7 @@ export const slash: Slash = {
                 .setImage(body.result[0].image)
                 .setFooter({ text: `Search Request by ${interaction.user.username}` })
                 .setTimestamp()
-                .setColor("GOLD");
+                .setColor(rc);
               interaction.followUp({ embeds: [embed] });
             });
           } catch (err) {

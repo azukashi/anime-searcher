@@ -1,5 +1,5 @@
+import { ColorResolvable, MessageEmbed } from 'discord.js';
 import { Command } from '../../Interfaces';
-import { MessageEmbed } from 'discord.js';
 import anilist from 'anilist-node';
 import fetch from 'node-fetch';
 const AniList = new anilist();
@@ -12,6 +12,8 @@ export const command: Command = {
     testOnly: false,
     permissions: ["SEND_MESSAGES", "EMBED_LINKS"],
     run: async(client, message, args) => {
+        // Specify embed color
+        const rc: ColorResolvable = message.guild.me.displayHexColor;
         // Get image from user
         const image: any = message.attachments.size > 0 ? message.attachments.map((attachments) => attachments.url) : args.join(" ");
         if(!image) message.reply({ content: `Expected got 1 argument, but got 0` });
@@ -34,7 +36,7 @@ export const command: Command = {
                 .setImage(body.result[0].image)
                 .setFooter({ text: `Search Request by ${message.author.username}` })
                 .setTimestamp()
-                .setColor("GOLD");
+                .setColor(rc);
               message.channel.send({ embeds: [embed] });
             });
           } catch (err) {
