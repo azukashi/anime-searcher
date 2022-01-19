@@ -4,7 +4,7 @@
 
 Discord Bot to Search an Anime from Image Source. Easily find anime from given Image URL or Uploaded attachments.
 
-[![Image Preview](https://cdn.upload.systems/uploads/7J1cBoB3.png)](https://i.upload.systems/7J1cBoB3)
+[![Image Preview](https://cdn.upload.systems/uploads/Wzm2qHbm.png)](https://i.upload.systems/Wzm2qHbm)
 
 </div>
 
@@ -99,14 +99,14 @@ $ dum start
 Try it yourself by searching an anime with this example image!
 
 ```
->search https://cdn.upload.systems/uploads/UY0zzn4Z.jpg
+>search https://cdn.upload.systems/uploads/8hPco9jD.jpg
 ```
 
 The example image is looks like this
 
-[![Example Image](https://cdn.upload.systems/uploads/UY0zzn4Z.jpg)](https://i.upload.systems/UY0zzn4Z)
+[![Example Image](https://cdn.upload.systems/uploads/8hPco9jD.jpg)](https://i.upload.systems/8hPco9jD)
 
-You can visit [i.upload.systems/UY0zzn4Z](https://i.upload.systems/UY0zzn4Z) to Getting RAW Image and Download it. Then, you can try to upload the image with <kbd>>search</kbd> caption.
+You can visit [i.upload.systems/8hPco9jD](https://i.upload.systems/8hPco9jD) to Getting RAW Image and Download it. Then, you can try to upload the image with <kbd>>search</kbd> caption.
 
 ## 👨‍💻 Contributing
 
