@@ -13,7 +13,7 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@types/node": "17.0.10",
+    "@types/node": "17.0.13",
     "anilist-node": "^1.11.0",
     "chalk": "^4.1.2",
     "consola": "^2.15.3",
