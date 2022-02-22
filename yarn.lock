@@ -146,13 +146,13 @@ acorn@^8.4.1:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.4.1.tgz#56c36251fc7cabc7096adc18f05afe814321a28c"
   integrity sha512-asabaBSkEKosYKMITunzX177CXxQ4Q8BSSzMTKD+FefUhipQC70gfW5SiUDhYQ3vk8G+81HqQk7Fv9OXwwn9KA==
 
-anilist-node@^1.11.0:
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/anilist-node/-/anilist-node-1.11.0.tgz#2de52fafa9857bd3a514549d0999575cf3268a3d"
-  integrity sha512-ekWVz51+P8BzEw/uRkrbHTtWLNzOUhHKD5H6BOcxQ+5eG9m5+pxTxCmkMRpJSBTK+dnUf8RnXyYo++UfFTEKOQ==
+anilist-node@^1.11.1:
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/anilist-node/-/anilist-node-1.11.1.tgz#72ee5db45696f5b7077a3566e6eb3c73aa987e1c"
+  integrity sha512-J3aBDMySXu78dcGuTqgxxls5f/4A9+aIILnLkB77QIdLBKaSLQWYrHEuzdFjqyIzy6KSMjTDTLrjIVgUUt26TA==
   dependencies:
     abort-controller "^3.0.0"
-    node-fetch "^2.6.6"
+    node-fetch "^2.6.7"
 
 ansi-escapes@^3.0.0:
   version "3.2.0"
@@ -1082,17 +1082,10 @@ nice-try@^1.0.4:
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
 
-node-fetch@2.6.7:
+node-fetch@2.6.7, node-fetch@^2.6.1, node-fetch@^2.6.7:
   version "2.6.7"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
   integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
-  dependencies:
-    whatwg-url "^5.0.0"
-
-node-fetch@^2.6.1, node-fetch@^2.6.6:
-  version "2.6.6"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.6.tgz#1751a7c01834e8e1697758732e9efb6eeadfaf89"
-  integrity sha512-Z8/6vRlTUChSdIgMa51jxQ4lrw/Jy5SOW10ObaA47/RElsAN2c5Pn8bTgFGWn/ibwzXTE8qwr1Yzx28vsecXEA==
   dependencies:
     whatwg-url "^5.0.0"
 
