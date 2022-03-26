@@ -22,7 +22,7 @@
     "dotenv": "16.0.0",
     "glob": "7.2.0",
     "mongoose": "5.13.14",
-    "node-fetch": "2.6.7"
+    "node-fetch": "3.2.3"
   },
   "devDependencies": {
     "prettier": "2.6.1",
