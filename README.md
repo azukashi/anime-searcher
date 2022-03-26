@@ -1,4 +1,4 @@
-[![Project card](https://cdn.upload.systems/uploads/3D4J4rLV.png)]()
+[![Project card](https://cdn.upload.systems/uploads/3D4J4rLV.png)](#)
 ![CI Status](https://img.shields.io/github/workflow/status/gifaldyazkaa/anime-searcher/%5BPrettier%5D%20Format%20Checking?label=CI&logo=github-actions&style=for-the-badge) ![Repo size](https://img.shields.io/github/repo-size/gifaldyazkaa/anime-searcher?logo=github&style=for-the-badge)
 
 ## 📂 Commands
