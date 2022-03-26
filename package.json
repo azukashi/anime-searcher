@@ -21,7 +21,7 @@
     "djs-template-cli": "1.2.1",
     "dotenv": "16.0.0",
     "glob": "7.2.0",
-    "mongoose": "5.13.14",
+    "mongoose": "6.2.8",
     "node-fetch": "2.6.7"
   },
   "devDependencies": {
