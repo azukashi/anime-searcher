@@ -20,7 +20,7 @@
     "discord.js": "13.6.0",
     "djs-template-cli": "1.2.1",
     "dotenv": "16.0.0",
-    "glob": "7.2.0",
+    "glob": "^8.0.1",
     "mongoose": "5.13.14",
     "node-fetch": "2.6.7"
   },
