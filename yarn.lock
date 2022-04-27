@@ -146,10 +146,10 @@ acorn@^8.4.1:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.4.1.tgz#56c36251fc7cabc7096adc18f05afe814321a28c"
   integrity sha512-asabaBSkEKosYKMITunzX177CXxQ4Q8BSSzMTKD+FefUhipQC70gfW5SiUDhYQ3vk8G+81HqQk7Fv9OXwwn9KA==
 
-anilist-node@1.11.2:
-  version "1.11.2"
-  resolved "https://registry.yarnpkg.com/anilist-node/-/anilist-node-1.11.2.tgz#dda1d07a53ad1d8fd868c2f384a76baac0c45561"
-  integrity sha512-2Enqcw+uWAZ9MW17kBkEYICxc93BW+v5LCKY9u1y8KVnA10khvoCYZdxfI6Z5pxkJG2Ap3P+RET3dh0Rgw8Cng==
+anilist-node@1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/anilist-node/-/anilist-node-1.12.0.tgz#82e5d262749d6c355afd87c55ed5af45883c3b8a"
+  integrity sha512-u8MuWC0TO89AhjmVrrRF1OLR58uI8jjG34ulTKM3x9bRyVnDs6yVuEdGINeYpbXeA4iFcL+eYM+Kqakcxiw07Q==
   dependencies:
     abort-controller "^3.0.0"
     node-fetch "^2.6.7"
